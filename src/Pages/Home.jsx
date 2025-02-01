@@ -8,7 +8,7 @@ import { FaMedal } from 'react-icons/fa';
 import { FaCertificate } from 'react-icons/fa';
 import { FaAppleAlt } from "react-icons/fa";
 import { MdAnalytics } from "react-icons/md";
-import Heart from "../Assets/Heart icon.png";
+// import Heart from "../Assets/Heart icon.png";
 import B11 from "../Assets/B11.jpg";
 import B12 from "../Assets/B12.jpg";
 import B13 from "../Assets/B13.jpg";

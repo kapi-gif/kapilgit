@@ -4,42 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp} from '@fortawesome/free-solid-svg-icons';
 
 const Pricing = () => {
-  // const plans = [
-  //   {
-  //     name: "Basic Plan",
-  //     description: "Up to 50% off on Yearly Plan",
-  //     features: [
-  //       "Personalized nutrition plan",
-  //       "Access to our mobile app",
-  //       "Email support",
-  //       "Regular check-ins",
-  //     ],
-  //     price: "$49/month",
-  //   },
-  //   {
-  //     name: "Premium Plan",
-  //     description: "Up to 50% off on Yearly Plan",
-  //     features: [
-  //       "All Basic Plan features",
-  //       "One-on-one video consultations",
-  //       "Recipe recommendations",
-  //       "Priority email support",
-  //     ],
-  //     price: "$79/month",
-  //   },
-  //   {
-  //     name: "Ultimate Plan",
-  //     description: "Up to 50% off on Yearly Plan",
-  //     features: [
-  //       "All Premium Plan features",
-  //       "Unlimited video consultations",
-  //       "Advanced tracking tools",
-  //       "Priority phone support",
-  //     ],
-  //     price: "$99/month",
-  //   },
-  // ];
-
   return (
 
     <>
@@ -51,7 +15,7 @@ const Pricing = () => {
           <img className='size-10 ml-auto mr-auto mt-20' src = {NutritionIcon} alt="Nutrition Icon" />
           <h1 className="text-2xl font-bold mb-4 flex justify-center items-center mt-11">Our Pricing</h1>
           <p className="mb-4 m-20  mt-6 ">At Nutrionist, we offer flexible pricing options to accomodate your unique requirements and budget.Our goal is to provide you with exceptional personalized nutrition 
-                                                                         coaching that is accessible  and tailored to your needs. Choose from our three plans below and take the first step towards a healthier lifestyle.</p>
+          coaching that is accessible  and tailored to your needs. Choose from our three plans below and take the first step towards a healthier lifestyle.</p>
         </div>
         </div>
 

@@ -8,8 +8,8 @@ import B5 from "../Assets/B5.jpg";
 import B6 from "../Assets/B6.jpg";
 import B7 from "../Assets/B7.jpg";
 import B8 from "../Assets/B8.jpg";
-import B9 from "../Assets/B9.jpg";
-import B10 from "../Assets/B10.jpg";
+// import B9 from "../Assets/B9.jpg";
+// import B10 from "../Assets/B10.jpg";
 import NutritionIcon from "../Assets/Nutrition Icon.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
