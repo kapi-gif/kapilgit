@@ -1,7 +1,7 @@
 import React from 'react'
 import ITIcon from "../Assets/B1.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';''
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 
 const steps = [
