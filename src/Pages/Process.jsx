@@ -2,7 +2,7 @@ import React from 'react'
 import ITIcon from "../Assets/B1.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
-
+import NutritionIcon from "../Assets/Nutrition Icon.png"
 
 const steps = [
     { id: 1, title: "Initial Consultation", description: "We begin by scheduling a consultation to understand your business needs and challenges, either through a virtual meeting or in person. During this session, we will assess your goals and discuss how our IT solutions can best serve you.", icon: "💻" },
@@ -21,10 +21,18 @@ const Process = () => {
     return (
         <>
             <div>
-                <div className="bg-zinc-950 text-center p-8 h-[400px] m-10 text-white">
-                    <img className='size-10 ml-auto mr-auto mt-20' src={ITIcon} alt="IT Icon" />
-                    <h1 className="text-2xl font-bold mt-10">Your Journey to IT Excellence</h1>
-                    <p className='ml-10 mr-10 p-5'>At AI INTEGRATOR, we provide a comprehensive, tailored approach to help your business leverage cutting-edge technology. Our "How it Works" process is designed to guide you through each phase of your IT transformation, ensuring you receive the support and tools you need for success. Here’s a detailed breakdown of our process.</p>
+                <div className="bg-zinc-950 text-center p-8 m-4 md:m-10 text-white"> 
+                    <img
+                        className="size-10 mx-auto mt-16 md:mt-20" 
+                        src={ITIcon}
+                        alt="IT Icon"
+                    />
+                    <h1 className="text-2xl font-bold mt-8 md:mt-10 px-4"> 
+                        Your Journey to IT Excellence
+                    </h1>
+                    <p className="px-4 md:px-10 mt-4 text-sm md:text-base"> 
+                        At AI INTEGRATOR, we provide a comprehensive, tailored approach to help your business leverage cutting-edge technology. Our "How it Works" process is designed to guide you through each phase of your IT transformation, ensuring you receive the support and tools you need for success. Here’s a detailed breakdown of our process.
+                    </p>
                 </div>
                 <main className="container mx-auto p-4">
                     <section className="text-center mb-8">
@@ -47,42 +55,64 @@ const Process = () => {
                 ))}
             </div>
 
-            <div className='bg-zinc-950 h-48 p-14 m-20 ml-14 mr-14 mt-20 text-white'>
-                <button className='bg-white text-black hover:bg-pink-500 px-3 py-2 rounded mr-5 float-right transform transition duration-300 ease-in-out' >Request a Demo</button>
-                <p className='ml-5 w-9/12 font-semibold text-xl'>
-                    Ready to transform your business with AI-driven IT solutions?
-                </p>
-                <p className='m-5 text-sm'>Join AI INTEGRATOR today and take the first step toward unlocking your business's full potential with technology.</p>
+            <div className='bg-zinc-950 p-6 sm:p-8 md:p-12 lg:p-14 mx-4 sm:mx-10 md:mx-14 lg:mx-20 mt-10 md:mt-16 lg:mt-20 text-white rounded-lg w-7xl'>
+                <div className='flex flex-col md:flex-row items-center justify-between'>
+                    <div className='text-center md:text-left mb-4 md:mb-0'>
+                        <p className='font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl'>
+                            Ready to transform your business with AI-driven IT solutions?
+                        </p>
+                        <p className='mt-2 text-sm sm:text-base'>
+                            Join AI INTEGRATOR today and take the first step toward unlocking your business's full potential with technology.
+                        </p>
+                    </div>
+                    <button className='bg-white text-black hover:bg-pink-500 px-4 py-2 rounded shadow-md transform transition duration-300 ease-in-out'>
+                        Request a Demo
+                    </button>
+                </div>
             </div>
 
-            <nav className="w-full bg-zinc-950 text-white py-3 h-[150px] mt-20">
-                <div className="flex">
-                    <div className="flex items-center max-w-5xl mx-auto px-4">
-                    <h1 className="flex -ml-32">AI INTEGRATOR</h1>
+            <nav className="w-full bg-zinc-950 text-white py-4 md:py-3 h-auto mt-10 md:mt-10">
+                {/* Navigation Container */}
+                <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4">
 
+                    {/* Logo Section */}
+                    <div className="flex items-center space-x-2">
+                        <img className="w-8 h-8" src={NutritionIcon} alt="Nutrition Icon" />
+                        <h1 className="text-lg md:text-xl font-bold">AI INTEGRATOR'S</h1>
                     </div>
 
-                    <div className="w-7/12 ">
-                        <ul className="flex gap-1 text-sm">
-                            <li className="hover:bg-gray-700 px-4 py-2 rounded transform transition-all duration-200">Home</li>
-                            <li className="hover:bg-gray-700 px-4 py-2 rounded transform transition-all duration-200">Services</li>
-                            <li className="hover:bg-gray-700 px-4 py-2 rounded transform transition-all duration-200">Solutions</li>
-                            <li className="hover:bg-gray-700 px-4 py-2 rounded transform transition-all duration-200">Testimonials</li>
-                            <li className="hover:bg-gray-700 px-4 py-2 rounded transform transition-all duration-200">Contact</li>
+                    {/* Navigation Links */}
+                    <div className="w-full md:w-auto mt-4 md:mt-0">
+                        <ul className="flex flex-col md:flex-row justify-center md:gap-4 text-sm space-y-2 md:space-y-0">
+                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Home</li>
+                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Services</li>
+                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Features</li>
+                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Testimonials</li>
+                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Contact</li>
                         </ul>
                     </div>
-                    <div className="mr-10 text-sm "><ul><li className="hover:bg-gray-700 px-4 py-2 rounded transform transition-all duration-200">Go To Top <FontAwesomeIcon icon={faArrowUp} /></li></ul></div>
+
+                    {/* Go To Top Button */}
+                    <div className="mt-4 md:mt-0">
+                        <ul>
+                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-sm flex items-center justify-center">
+                                Go To Top <FontAwesomeIcon icon={faArrowUp} className="ml-2" />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div className="flex w-11/12 ml-14 -mr-16 items-center mt-6 p-2 bg-pink-600 border-white">
-                    <div className="flex items-center w-full text-sm px-2 py-1 rounded gap-3 ">
-                        <p className="mx-1">hello@aiintegrator.com</p>
-                        <p className="mx-1">+91813232309</p>
-                        <p className="mx-1">Somewhere in the World</p>
-                        <div className="mx-1"><p>2023 AI INTEGRATOR. All rights reserved</p></div>
+                {/* Contact Information Section */}
+                <div className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto mt-6 p-3 bg-pink-600 text-black rounded-lg">
+                    <div className="flex flex-col md:flex-row items-center text-sm gap-4 md:gap-10">
+                        <p>Contact: +916264601696 </p>
+                        <p>Email: info@aiintegrators.com</p>
+                        <p>Address: Sapna Sangeeta Road </p>
                     </div>
                 </div>
             </nav>
+
+
         </>
     );
 };
