@@ -132,40 +132,38 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 const Contact = () => {
   return (
     <>
-      {/* Contact Us Section */}
-      <div className="bg-zinc-950 mx-auto max-w-7xl mt-12 p-6 flex flex-col justify-center items-center text-white h-auto md:h-[360px]">
-        <div className="w-full text-center">
+      
+      <div className='bg-zinc-800 '>
+      <div className="bg-zinc-950 mx-auto max-w-7xl  p-6  flex flex-col justify-center items-center text-white h-auto md:h-[360px] mt-12">
+        <div className="w-full text-center rounded-2xl">
           <h1 className="text-2xl md:text-3xl font-bold mb-4">Contact Us</h1>
           <p className="text-sm md:text-base mb-2">
-            We value your feedback, questions, and concerns at Ai Integrator's. Our dedicated team is here to
+            We value your feedback, questions, and concerns at Ai Integratorz . Our dedicated team is here to
             assist you and provide the support you need on your journey.
           </p>
           <p className="text-sm md:text-base">
             Please don't hesitate to reach out to us using any of the following contact methods.
           </p>
 
-          {/* Contact Information Section */}
-          <nav className="bg-pink-600 mt-8 flex flex-col md:flex-row justify-center items-center md:space-x-6 space-y-4 md:space-y-0 py-6 md:py-8 rounded-lg">
-            <p className="w-full md:w-[300px] bg-zinc-950 text-white py-4 md:py-6 text-center rounded-lg">
-              support@aiintegrator.com
+          
+          <nav className="bg-zinc-600 mt-8 flex flex-col md:flex-row justify-center items-center md:space-x-6 space-y-4 md:space-y-0 py-6 md:py-8 rounded-lg">
+            <p className="w-full md:w-[300px] bg-zinc-950 text-white py-4 md:py-6 text-center rounded-lg hover:bg-zinc-800">
+              support@aiintegratorz.com
             </p>
-            <p className="w-full md:w-[300px] bg-zinc-950 text-white py-4 md:py-6 text-center rounded-lg">
+            <p className="w-full md:w-[300px] bg-zinc-950 text-white py-4 md:py-6 text-center rounded-lg hover:bg-zinc-800">
               +916264601696
             </p>
-            <p className="w-full md:w-[300px] bg-zinc-950 text-white py-4 md:py-6 text-center rounded-lg">
+            <p className="w-full md:w-[300px] bg-zinc-950 text-white py-4 md:py-6 text-center rounded-lg hover:bg-zinc-800">
               Somewhere in the World
             </p>
           </nav>
         </div>
       </div>
 
-
-      {/* Form and Image Section */}
-      {/* Form and Image Section */}
       <div className="flex justify-center mt-16 px-4">
-        <div className="max-w-7xl w-full flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8 p-6 lg:p-8 shadow-lg rounded-lg text-white bg-gradient-to-r from-purple-600 to-pink-800">
+        <div className="max-w-7xl w-full flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8 p-6 lg:p-8 shadow-lg rounded-lg text-white bg-gradient-to-r from-neutral-600 to-neutral-900">
 
-          {/* Left Side - Contact Form */}
+          
           <div className="w-full lg:w-1/2 space-y-6">
             <div>
               <label className="block text-gray-200 font-semibold mb-2 text-sm">Full Name</label>
@@ -186,7 +184,7 @@ const Contact = () => {
             <button className="bg-white text-black py-3 rounded-lg hover:bg-lime-200 w-full">Send Message</button>
           </div>
 
-          {/* Right Side - Image */}
+          
           <div className="w-full lg:w-1/2 flex justify-center items-center">
             <img src={Map} alt="Map" className="w-full h-64 md:h-80 lg:h-96 rounded-lg object-cover" />
           </div>
@@ -195,15 +193,14 @@ const Contact = () => {
 
 
 
-      {/* Join Us Section */}
-      {/* Join Us Section */}
+
       <div className="max-w-7xl mx-auto bg-zinc-950 shadow-lg rounded-lg p-4 sm:p-6 md:p-8 flex flex-col mt-8 md:mt-12 text-white">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
-          Ready to leverage cutting-edge technology for a smarter and healthier future with AI INTEGRATOR's?
+          Ready to leverage cutting-edge technology for a smarter and healthier future with AI INTEGRATORZ ?
         </h2>
 
         <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6">
-          Join us at AI INTEGRATOR and let us guide you on the path to a healthier and happier you.
+          Join us at Ai Intregratorz and let us guide you on the path to a healthier and happier you.
         </p>
 
         <div className="flex justify-center md:justify-end">
@@ -221,7 +218,7 @@ const Contact = () => {
           {/* Logo Section */}
           <div className="flex items-center space-x-2">
             <img className="w-8 h-8" src={NutritionIcon} alt="Nutrition Icon" />
-            <h1 className="text-lg md:text-xl font-bold">AI INTEGRATOR'S</h1>
+            <h1 className="text-lg md:text-xl font-bold">AI INTEGRATORZ</h1>
           </div>
 
           {/* Navigation Links */}
@@ -249,11 +246,12 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto mt-6 p-3 bg-pink-600 text-black rounded-lg">
           <div className="flex flex-col md:flex-row items-center text-sm gap-4 md:gap-10">
             <p>Contact: +916264601696 </p>
-            <p>Email: info@aiintegrators.com</p>
+            <p>Email: info@aiintegratorz.com</p>
             <p>Address: Sapna Sangeeta Road </p>
           </div>
         </div>
       </nav>
+      </div>
 
     </>
   );

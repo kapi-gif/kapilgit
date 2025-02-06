@@ -1,222 +1,265 @@
-import React from "react";
-import NutritionIcon from "../Assets/Nutrition Icon.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp} from '@fortawesome/free-solid-svg-icons';
+// import React from 'react';
+// import { motion } from 'framer-motion';
+// import M1 from '../Assets/M1.jpg';
 
-const Pricing = () => {
+// const teamMembers = [
+//   { name: 'Narayani Badole', image: M1 },
+//   { name: 'Ayushi ', image: '/images/M1.jpg' },
+//   { name: 'Amit Verma', image: '/images/member3.jpg' },
+//   { name: 'Anuj Verma', image: '/images/member4.jpg' },
+//   { name: 'Kapil Likhitkar', image: '/images/member5.jpg' },
+//   { name: 'Anuradha Meena', image: '/images/member6.jpg' },
+//   { name: 'Rahul Patidar', image: '/images/member7.jpg' },
+//   { name: 'Member 8', image: '/images/member8.jpg' },
+//   { name: 'Member 9', image: '/images/member9.jpg' },
+//   { name: 'Member 10', image: '/images/member10.jpg' },
+//   { name: 'Member 11', image: '/images/member11.jpg' },
+//   { name: 'Member 12', image: '/images/member12.jpg' },
+//   { name: 'Member 13', image: '/images/member13.jpg' },
+//   { name: 'Member 14', image: '/images/member14.jpg' },
+//   { name: 'Member 15', image: '/images/member15.jpg' },
+//   { name: 'Member 16', image: '/images/member16.jpg' }
+// ];
+
+// const Team = () => {
+//   return (
+//     <div className="p-8 bg-gray-100 min-h-screen">
+//       <h1 className="text-3xl font-bold text-center mb-8">Our Team</h1>
+//       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+//         {teamMembers.map((member, index) => (
+//           <motion.div
+//             key={index}
+//             className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-500"
+//             initial={{ opacity: 0, y: 50 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 0.5, delay: index * 0.1 }}
+//           >
+//             <img src={member.image} alt={member.name} className="w-full h-48 object-cover" />
+//             <div className="p-4 text-center">
+//               <h2 className="text-xl font-semibold text-gray-800">{member.name}</h2>
+//             </div>
+//           </motion.div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Team;
+
+// import React from 'react';
+// import { motion } from 'framer-motion';
+// import M1 from '../Assets/M1.jpg';
+// import M2 from '../Assets/M2.jpg';
+// import M3 from '../Assets/M3.jpg';
+// import M5 from '../Assets/M5.jpg';
+// import M6 from '../Assets/M6.jpg';
+// import M7 from '../Assets/M7.jpg';
+// import M8 from '../Assets/M8.jpg';
+
+// const teamMembers = [
+//   { name: 'Narayani Badole', image: M1 },
+//   { name: 'Ayushi', image: M3 },
+//   { name: 'Amit Verma', image: M2 },
+//   { name: 'Uttam Yadav', image:M5 },
+//   { name: 'Sandip Yadav', image:M6},
+//   { name: 'Anuradha', image:M7 },
+//   { name: 'Shivang Bhargav', image: M8 },
+//   { name: 'Member 8', image: '/images/member8.jpg' },
+//   { name: 'Member 9', image: '/images/member9.jpg' },
+//   { name: 'Member 10', image: '/images/member10.jpg' },
+//   { name: 'Member 11', image: '/images/member11.jpg' },
+//   { name: 'Member 12', image: '/images/member12.jpg' },
+//   { name: 'Member 13', image: '/images/member13.jpg' },
+//   { name: 'Member 14', image: '/images/member14.jpg' },
+//   { name: 'Member 15', image: '/images/member15.jpg' },
+//   { name: 'Member 16', image: '/images/member16.jpg' }
+// ];
+
+// const cardVariants = {
+//   offscreen: (index) => ({
+//     opacity: 0,
+//     y: index % 2 === 0 ? 50 : -50,
+//     scale: 0.8,
+//   }),
+//   onscreen: {
+//     opacity: 1,
+//     y: 0,
+//     scale: 1,
+//     transition: {
+//       type: 'spring',
+//       bounce: 0.4,
+//       duration: 0.8
+//     }
+//   },
+//   hover: {
+//     scale: 1.05,
+//     boxShadow: '0 8px 20px rgba(0, 0, 0, 0.3)',
+//     transition: { duration: 0.3 }
+//   }
+// };
+
+// const Team = () => {
+//   return (
+//     <div className="p-8 bg-gradient-to-r from-blue-50 to-purple-100 min-h-screen">
+//       <motion.h1
+//         className="text-4xl font-extrabold text-center mb-10 text-indigo-900"
+//         initial={{ opacity: 0, x: -100 }}
+//         animate={{ opacity: 1, x: 0 }}
+//         transition={{ duration: 1 }}
+//       >
+//         Our Professional Team
+//       </motion.h1>
+
+//       <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
+//         {teamMembers.map((member, index) => (
+//           <motion.div
+//             key={index}
+//             className="bg-white rounded-xl overflow-hidden shadow-md cursor-pointer transform transition-transform"
+//             custom={index}
+//             initial="offscreen"
+//             whileInView="onscreen"
+//             whileHover="hover"
+//             viewport={{ once: true, amount: 0.5 }}
+//             variants={cardVariants}
+//           >
+//             <motion.img
+//               src={member.image}
+//               alt={member.name}
+//               className="w-full h-48 object-cover "
+//               initial={{ scale: 1 }}
+//               whileHover={{ scale: 1.1, rotate: 2 }}
+//               transition={{ duration: 0.4 }}
+//             />
+//             <motion.div className="p-4 text-center bg-indigo-50">
+//               <motion.h2
+//                 className="text-xl font-semibold text-indigo-800 relative"
+//                 whileHover={{ scale: 1.1 }}
+//               >
+//                 {member.name}
+//                 <motion.div
+//                   className="h-1 bg-indigo-500 rounded-full w-0 mx-auto mt-1"
+//                   whileHover={{ width: '50%' }}
+//                   transition={{ duration: 0.3 }}
+//                 />
+//               </motion.h2>
+//             </motion.div>
+//           </motion.div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Team;
+import React from 'react';
+import { motion } from 'framer-motion';
+import M1 from '../Assets/M1.jpg';
+import M2 from '../Assets/M2.jpg';
+import M5 from '../Assets/M5.jpg';
+import M6 from '../Assets/M6.jpg';
+import M7 from '../Assets/M7.jpg';
+import M8 from '../Assets/M8.jpg';
+import M9 from '../Assets/M9.jpg';
+import M10 from '../Assets/M10.jpg';
+import M11 from '../Assets/M11.jpg';
+import M12 from '../Assets/M12.jpg';
+import M13 from '../Assets/M13.jpg';
+import M20 from '../Assets/M20.jpg';
+import M21 from '../Assets/M21.jpg';
+import M30 from '../Assets/M30.jpg';
+import M31 from '../Assets/M31.jpg';
+
+
+const teamMembers = [
+  { name: 'Preeti Khairwar', role: 'HR Executive ', image: M12 },
+  { name: 'Vinay Yadav', role: 'Mern Stack Developer', image: M30},
+  { name: 'Anuradha Meena', role: 'Full Stack Developer', image:M9 },
+  { name: 'Narayani Badole', role: 'Android Developer', image: M1 },
+  
+  { name: 'Sakshi Bhadoriya', role: 'Python Developer', image: M20},
+  { name: 'Ayushi Sohani', role: 'Android Developer', image: M2 },
+  
+  { name: 'Uttam Yadav', role: 'Mern Stack Developer', image: M5 },
+  { name: 'Sandip Yadav', role: 'Mern Stack Developer', image: M6 },
+  { name: 'Shivang Bhargav', role: 'Mern Stack Developer', image: M8 },
+  { name: 'Amit Verma', role: 'Frontend Developer', image: M11 },
+  
+  { name: 'Kedar Yadav', role: 'Frontend Developer', image: M31 },
+  { name: 'Member 14', role: 'Product Owner', image: '/images/member14.jpg' },
+  { name: 'Member 15', role: 'HR Manager', image: '/images/member15.jpg' },
+  { name: 'Member 16', role: 'Support Engineer', image: '/images/member16.jpg' },
+  { name: 'Kapil Likhitkar Jhadu Developer', role: 'Sab ka badla lenga re tera Faizal', image: M21 }
+  
+];
+
+const cardVariants = {
+  offscreen: (index) => ({
+    opacity: 0,
+    y: index % 2 === 0 ? 50 : -50,
+    scale: 0.8,
+  }),
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      type: 'spring',
+      bounce: 0.4,
+      duration: 0.8
+    }
+  },
+  hover: {
+    scale: 1.05,
+    boxShadow: '0 8px 20px rgba(0, 0, 0, 0.3)',
+    transition: { duration: 0.3 }
+  }
+};
+
+const Team = () => {
   return (
+    <div className="p-8 bg-gradient-to-l from-zinc-950 to-zinc-700 min-h-screen">
+      <motion.h1
+        className="text-4xl font-extrabold text-center mb-10 text-slate-300"
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Our Professional Team
+      </motion.h1>
 
-    <>
-
-       {/* Contact Us Section */}
-
-<div className="bg-lime-50 m-[50px] h-[400px] p-6 flex flex-col justify-between">
-        <div> 
-          <img className='size-10 ml-auto mr-auto mt-20' src = {NutritionIcon} alt="Nutrition Icon" />
-          <h1 className="text-2xl font-bold mb-4 flex justify-center items-center mt-11">Our Pricing</h1>
-          <p className="mb-4 m-20  mt-6 ">At Nutrionist, we offer flexible pricing options to accomodate your unique requirements and budget.Our goal is to provide you with exceptional personalized nutrition 
-          coaching that is accessible  and tailored to your needs. Choose from our three plans below and take the first step towards a healthier lifestyle.</p>
-        </div>
-        </div>
-
-      <div className="m-[100px]">
-  {/* Monthly, Yearly, and Discount Section */}
-  <div className="flex flex-col items-center mb-6 ">
-    <div className="flex space-x-4 mt-2 ">
-      <button className="py-2 px-4 bg-green-800 text-white rounded">Monthly</button>
-      <button className="py-2 px-4  text-black rounded  border-2 border-black">Yearly</button>
-    </div>
-    <div className="mt-2">
-      <h5 className="text-black-600 font-semibold">Save 50% On Yearly</h5>
-    </div>
-  </div>
-
-        {/* Plans Section */}
-        <div className="flex justify-center space-x-20">
-          {/* Ultimate Plan - Tallest */}
-          <div className="bg-lime-50 p-6 rounded-lg shadow-md w-[330px] h-[450px] flex flex-col justify-between">
-            <h1 className="text-lg font-bold">Basic Plan</h1>
-            <p className="text-sm">upto 50% off On Yearly Plan</p>
-            <p className="text-sm mt-4 bg-lime-100">Personalized nutrition Plan tailored to your goals and dietary preferences</p>
-            <p className="text-sm mt-4 bg-lime-100">Access to our mobile app for for convenient meal tracking and progress monitoring</p>
-            <p className="text-sm mt-4 bg-lime-100">Email support to address your questions and concerns.</p>
-            <p className="text-sm mt-4 bg-lime-100">Regular check-ins with a dedicated nutrionist to review your progress and provide guidance.</p>
-            <p className="text-lg font-semibold text-center mt-4">$99/month</p>
-            <button className="mt-4 w-full py-2 bg-lime-300 hover:bg-lime-500 text-black rounded">Choose Plan</button>
-          </div>
-
-          {/* Premium Plan - Medium height */}
-          <div className="bg-lime-50 p-6 rounded-lg shadow-md w-[330px] h-[500px] flex flex-col justify-between">
-            <h1 className="text-lg font-bold">Premium Plan</h1>
-            <p className="text-sm">Upto 50% off on Yearly Plan</p>
-            <p className="text-sm mt-4 bg-lime-100">All Basic Plan features</p>
-            <p className="text-sm mt-4 bg-lime-100">One-on-one video consultations with your dedicated nutrionist for more personalized guidance and support.</p>
-            <p className='text-sm mt-4 bg-lime-100'>Reecipe recommendations and meal planning assistance.</p>
-            <p className="text-sm mt-4 bg-lime-100">Priority email support for quicker responses to your inquiries.</p>
-            <p className='text-sm mt-4 bg-lime-100'>Educational resources and guides to deepen your understanding of nutrition and healty habits</p>
-            <p className="text-lg font-semibold text-center mt-4">$79/month</p>
-            <button className="mt-4 w-full py-2 bg-lime-300 hover:bg-lime-500 text-black rounded">Choose Plan</button>
-          </div>
-
-          {/* Basic Plan - Shortest */}
-          <div className="bg-lime-50 p-6 rounded-lg shadow-md w-[330px] h-[600px] flex flex-col justify-between">
-            <h1 className="text-lg font-bold">Ultimate Plan</h1>
-            <p className="text-sm">Upto 50% off on Yearly Plan</p>
-            <p className="text-sm mt-4 bg-lime-100">All the features included in the plus plan.</p>
-            <p className="text-sm mt-4 bg-lime-100">Unlimited access to video consultations with your dedicated nutrionist for ongoing support and accountability.</p>
-            <p className='text-sm mt-4 bg-lime-100'>Advanced progress tracking tools to monitor your weight, body measurements, and fitness goals</p>
-            <p className='text-sm mt-4 bg-lime-100'>Customized meal plans and recipe suggestions based on your preferences and nutrional needs.</p>
-            <p className='text-sm mt-4 bg-lime-100'>Priority Email and phone support  for immediate assistance.</p>
-            <p className="text-lg font-semibold text-center mt-4">$49/month</p>
-            <button className="mt-4 w-full py-2 bg-lime-300 hover:bg-lime-500 text-black rounded">Choose Plan</button>
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-[70px] h-[560px] border border-gray-300 p-4 bg-lime-50">
-  {/* Header with Buttons */}
-  <div className="grid grid-cols-4 text-center border-b border-gray-300 bg-green-900">
-    <button className="py-2 font-bold border-r border-gray-300 text-white">Features</button>
-    <button className="py-2 font-bold border-r border-gray-300 text-white">Free Plan</button>
-    <button className="py-2 font-bold border-r border-gray-300 text-white">Free Plan</button>
-    <button className="py-2 font-bold text-white">Free Plan</button>
-  </div>
-
-  {/* Features and Checkmarks Table */}
-  <div className="grid grid-cols-4 text-center border-t border-gray-300 text-xs">
-    {/* First Column - Features */}
-    <div className="flex flex-col items-start border-r border-gray-300 ">
-      {[
-        'Personalized Nutrition Plan',
-        'Mobile App Access',
-        'Email Support',
-        'One-on-One Video Consultations',
-        'Recipe Recommendations and Meal Planning',
-        'Priority Support',
-        'Educational Resources and Guides',
-        'Advanced Progress Tracking Tools',
-        'Customized Meal Plans and Recipe Suggestions',
-        'Phone Support'
-      ].map((feature, index) => (
-        <p key={index} className="py-4 border-b border-gray-300 px-2">
-          {feature}
-        </p>
-      ))}
-    </div>
-
-    {/* Other Columns - Checkmarks */}
-    {[...Array(3)].map((_, idx) => (
-      <div key={idx} className="flex flex-col items-center border-r border-gray-300">
-        {Array(10).fill().map((_, i) => (
-          <p key={i} className="py-4 border-b border-gray-300">✔️</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {teamMembers.map((member, index) => (
+          <motion.div
+            key={index}
+            className="bg-gray-700 rounded-xl overflow-hidden shadow-md cursor-pointer transform transition-transform h-[320px] w-[350px] mx-auto"
+            custom={index}
+            initial="offscreen"
+            whileInView="onscreen"
+            whileHover="hover"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={cardVariants}
+          >
+            <motion.img
+              src={member.image}
+              alt={member.name}
+              className="w-[230px] h-[230px] object-cover rounded-full mx-auto mt-4 transition-all duration-300 ease-in-out hover:rounded-none"
+            />
+            <motion.div
+              className="p-2 text-center bg-indigo-50 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100"
+            >
+              <motion.h2 className="text-md font-semibold text-indigo-800">
+                {member.name}
+              </motion.h2>
+              <motion.p className="text-sm text-gray-600 mt-1">
+                {member.role}
+              </motion.p>
+            </motion.div>
+          </motion.div>
         ))}
       </div>
-    ))}
-  </div>
-</div>
-<div className="flex items-start mx-[70px] space-x-8">
-  {/* FAQ Section */}
-  <div>
-    <div className="flex flex-col items-center text-center ml-[300px]">
-      <h1 className="text-2xl font-bold mt-[70px] ">FAQ</h1>
-      <p className="mt-4 text-xs">
-        We address commonly asked questions and provide comprehensive answers to help you navigate your way through your nutrition and wellness journey.
-      </p>
     </div>
-
-    <div className="mx-[8px] h-[320px] w-[800px] bg-lime-50 p-4 mt-[60px] border-4 border-lime-50 ">
-      <div className="space-y-4">
-        <div className="flex justify-between items-center text-left my-4">
-          <p className="w-full">How can nutrition coaching help me lose weight?</p>
-          <span className="cursor-pointer text-xs">
-            <div className="bg-gray-800 text-white p-1">+</div>
-          </span>
-        </div>
-        <div className="border-b border-gray-400 w-full"></div>
-
-        <div className="flex justify-between items-center text-left my-4">
-          <p className="w-full">Can I still enjoy my favorite foods while on a nutrition plan?</p>
-          <span className="cursor-pointer text-xs">
-            <div className="bg-gray-800 text-white p-1">+</div>
-          </span>
-        </div>
-        <div className="border-b border-gray-400 w-full"></div>
-
-        <div className="flex justify-between items-center text-left my-4">
-          <p className="w-full">How often will I have contact with my nutritionist?</p>
-          <span className="cursor-pointer text-xs">
-            <div className="bg-gray-800 text-white p-1">+</div>
-          </span>
-        </div>
-        <div className="border-b border-gray-400 w-full"></div>
-
-        <div className="flex justify-between items-center text-left my-4">
-          <p className="w-full">How long will it take to see results?</p>
-          <span className="cursor-pointer text-xs">
-            <div className="bg-gray-800 text-white p-1">+</div>
-          </span>
-        </div>
-        <div className="border-b border-gray-400 w-full"></div>
-
-        <div className="flex justify-between items-center text-left my-4">
-          <p className="w-full">Are the meal plans and recipes provided suitable for vegetarians or vegans?</p>
-          <span className="cursor-pointer text-xs">
-            <div className="bg-gray-800 text-white p-1">+</div>
-          </span>
-        </div>
-        <div className="border-b "></div>
-      </div>
-    </div>
-  </div>
-
-  {/* Ask Your Question Section */}
-  <div className="bg-lime-50 h-[320px] w-[500px] p-4 flex flex-col items-center text-center space-y-4 mt-[210px]">
-  <img className='size-20 ml-auto mr-auto mt-10' src = {NutritionIcon} alt="Nutrition Icon" />
-    <h1 className="text-lg font-semibold text-green-900 mt-[130px]">Ask Your Question</h1>
-    <p className="text-sm">Feel free to ask questions anytime</p>
-    <button className="mt-2 bg-lime-300 hover:bg-lime-500  text-black px-4 py-2 rounded">Ask A Question</button>
-  </div>
-</div>
-    
-
-<nav className=" w-full bg-green-950 text-white py-3 h-[150px] mt-24">
-  {/* Navigation Links Section */}
-  <div className="flex ">
-  <div className="flex items-center max-w-5xl mx-auto px-4">
-    <h1 className="flex -ml-32"><img className='size-6 ' src = {NutritionIcon} alt="Nutrition Icon" />Nutritionist</h1>
-    </div>
-
-    {/* Centered Navigation Links */}
-    <div className="w-7/12 ">
-    <ul className="flex gap-1 text-sm">
-      <li className="hover:bg-gray-700 px-4 py-2 rounded">Home</li>
-      <li className="hover:bg-gray-700 px-4 py-2 rounded">Services</li>
-      <li className="hover:bg-gray-700 px-4 py-2 rounded">Features</li>
-      <li className="hover:bg-gray-700 px-4 py-2 rounded">Testimonials</li>
-      <li className="hover:bg-gray-700 px-4 py-2 rounded">Contact</li>
-      {/* <li className="hover:bg-gray-700 px-4 py-2 rounded">Go To Top</li> */}
-    </ul>
-  </div >
-  <div className="mr-10 text-sm "><ul><li className="hover:bg-gray-700 px-4 py-2 rounded ">Go To Top <FontAwesomeIcon icon={faArrowUp} /></li></ul></div>
-  </div>
-  
-  {/* Contact Information Section */}
-
-  {/* <div className="flex "> */}
-<div className="flex w-11/12 ml-14 -mr-16 items-center mt-6 p-2 bg-green-900  border-white ">
-  <div className="flex items-center w-full text-sm px-2 py-1 rounded gap-3 ">
-    <p className="mx-1 ">hello@squareup.com</p>
-    <p className="mx-1">+91813232309</p>
-    <p className="mx-1">Somewhere in the World</p>
-   <div className="mx-1"><p >2023 Nutritionist. All rights reserved</p></div>
-  </div>
-
-</div>
-</nav>
-
-</>
   );
 };
 
-export default Pricing;
-
+export default Team;

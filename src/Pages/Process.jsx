@@ -1,5 +1,5 @@
 import React from 'react'
-import ITIcon from "../Assets/B1.jpg"
+import ITIcon from "../Assets/Ai2.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import NutritionIcon from "../Assets/Nutrition Icon.png"
@@ -20,10 +20,10 @@ const steps = [
 const Process = () => {
     return (
         <>
-            <div>
+         <div>
                 <div className="bg-zinc-950 text-center p-8 m-4 md:m-10 text-white"> 
                     <img
-                        className="size-10 mx-auto mt-16 md:mt-20" 
+                        className="size-20 mx-auto mt-16 md:mt-20" 
                         src={ITIcon}
                         alt="IT Icon"
                     />

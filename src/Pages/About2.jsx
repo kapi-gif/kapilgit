@@ -28,10 +28,10 @@ const About = () => {
         <div>
           <img className="w-10 h-10 mx-auto mt-6 sm:mt-8 md:mt-10" src={NutritionIcon} alt="Nutrition Icon" />
           <h1 className="text-xl sm:text-2xl font-bold mb-4 flex justify-center items-center mt-4 sm:mt-5 text-center">
-            WELCOME TO AI INTEGRATOR'S
+            WELCOME TO AI INTEGRATORZ
           </h1>
           <p className="mb-4 p-2 sm:p-4 md:p-5 text-sm sm:text-base md:text-lg leading-relaxed text-justify">
-            At AI Integrator, we are committed to delivering innovative solutions that drive digital transformation.
+            At AI Integratorz , we are committed to delivering innovative solutions that drive digital transformation.
             Our mission is to empower businesses by providing cutting-edge technology and IT services that enhance
             operational efficiency, streamline processes, and unlock new opportunities for growth.
             <br /><br />
@@ -51,7 +51,7 @@ const About = () => {
         Our Story
       </h1>
       <p className="px-4 md:px-40 text-justify text-sm md:text-base"> {/* Added responsive px and text size */}
-        Welcome to <span className="font-semibold text-blue-600">AI Integrator</span>, your trusted partner in transforming businesses through cutting-edge IT solutions. Our team of experienced developers and IT professionals specialize in delivering innovative software, AI-driven technologies, and cloud-based systems tailored to meet the unique needs of your organization. We are committed to driving digital transformation, enhancing operational efficiency, and helping you stay ahead in this rapidly evolving tech landscape.
+        Welcome to <span className="font-semibold text-blue-600">AI Integratorz</span>, your trusted partner in transforming businesses through cutting-edge IT solutions. Our team of experienced developers and IT professionals specialize in delivering innovative software, AI-driven technologies, and cloud-based systems tailored to meet the unique needs of your organization. We are committed to driving digital transformation, enhancing operational efficiency, and helping you stay ahead in this rapidly evolving tech landscape.
       </p>
 
 
@@ -82,7 +82,7 @@ const About = () => {
             happier, more fulfilling lives. Our journey of inspiring transformations
             continues, one digital interaction at a time.
           </p>
-          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">July 1, 2025</p> {/* Adjusted margin and text size */}
+          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">January 1, 2025</p> {/* Adjusted margin and text size */}
         </div>
       </div>
 
@@ -105,7 +105,7 @@ const About = () => {
             platform and its impact on client success, solidifying our position as a
             leader in tech-enabled wellness solutions.
           </p>
-          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">March 10, 2023</p> {/* Adjusted margin and text size */}
+          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">January 10, 2023</p> {/* Adjusted margin and text size */}
         </div>
       </div>
 
@@ -128,7 +128,7 @@ const About = () => {
             goals through technology. This milestone highlights the positive impact
             our digital solutions have made on thousands of lives.
           </p>
-          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">November 2, 2021</p> {/* Adjusted margin and text size */}
+          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">January 2, 2025</p> {/* Adjusted margin and text size */}
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@ const About = () => {
             to provide our users with the most effective and personalized
             nutrition solutions available.
           </p>
-          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">July 15, 2019</p>
+          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">March 15, 2023</p>
         </div>
       </div>
 
@@ -174,7 +174,7 @@ const About = () => {
             allowing us to connect with users more effectively. This includes targeted messaging,
             individualized feedback, and convenient access to our support team.
           </p>
-          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">April 1, 2018</p>
+          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">April 1, 2024</p>
         </div>
       </div>
 
@@ -197,7 +197,7 @@ const About = () => {
             enabled businesses to automate workflows, analyze data efficiently,
             and deliver an enhanced customer experience through seamless digital solutions.
           </p>
-          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">January 20, 2017</p>
+          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">March 20, 2023</p>
         </div>
       </div>
     </div>
@@ -222,7 +222,7 @@ const About = () => {
             impact of our innovative tech solutions on businesses, inspiring our
             team to push the boundaries of technology and deliver exceptional services.
           </p>
-          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">September 5, 2015</p>
+          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">September 5, 2023</p>
         </div>
       </div>
 
@@ -245,7 +245,7 @@ const About = () => {
             solutions and expert IT support. This milestone enhanced accessibility
             and scalability, empowering enterprises to drive digital transformation.
           </p>
-          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">June 10, 2014</p>
+          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">June 10, 2024</p>
         </div>
       </div>
 
@@ -269,7 +269,7 @@ const About = () => {
             digital experiences. This success motivates our team to continue delivering
             cutting-edge technology services.
           </p>
-          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">September 5, 2015</p>
+          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">September 5, 2024</p>
         </div>
       </div>
 
@@ -293,7 +293,7 @@ const About = () => {
             clients to collaborate with us seamlessly and leverage our expertise from
             any location.
           </p>
-          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">June 10, 2014</p>
+          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">Feb 6, 2025</p>
         </div>
       </div>
     </div>
@@ -304,8 +304,8 @@ const About = () => {
       <h1 className="font-bold text-center text-2xl mt-16 px-4"> 
         Company Achievements
       </h1>
-      <p className="px-4 md:px-36 mt-8 text-sm md:text-base"> 
-        At AI Integrator, we take pride in our achievements and the innovative solutions
+      <p className="px-4 md:px-36 mt-8 text-sm md:text-base text-center"> 
+        At AI Integratorz , we take pride in our achievements and the innovative solutions
         we have delivered to our clients. From cutting-edge software development to
         advanced AI-driven applications, our journey has been marked by continuous growth
         and technological excellence. Here are some of our notable milestones.
