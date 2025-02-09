@@ -8,10 +8,12 @@ import B3 from "../Assets/B3.jpg";
 import B4 from "../Assets/B4.jpg";
 import B5 from "../Assets/B5.jpg";
 import B6 from "../Assets/B6.jpg";
-import B7 from "../Assets/B7.webp";
+import B7 from "../Assets/B6.jpg";
 import B8 from "../Assets/B8.jpg";
-import B9 from "../Assets/B9.png";
+import B9 from "../Assets/B8.jpg";
 import NutritionIcon from "../Assets/Nutrition Icon.png";
+import S1 from '../Assets/S1.webp'
+import S2 from '../Assets/S2.jpg'
 
 function Blog() {
   return (
@@ -40,9 +42,9 @@ function Blog() {
             { title: "Understanding Cloud Computing", img: B4, link: "/blog/cloud-computing", desc: "Get a comprehensive overview of cloud computing and its role in modern development." },
             { title: "Agile Development", img: B5, link: "/blog/agile-methodologies", desc: "Explore the advantages of Agile methodologies in project management." },
             { title: "Front-End Development", img: B6, link: "/blog/front-end-development", desc: "Learn essential skills and tools required for front-end development." },
-            { title: "Cybersecurity Trends", img: B9, link: "/blog/cybersecurity", desc: "Stay ahead with the latest trends in cybersecurity and data protection." },
+            { title: "Cybersecurity Trends", img: S2, link: "/blog/cybersecurity", desc: "Stay ahead with the latest trends in cybersecurity and data protection." },
             { title: "Data Science & AI", img: B8, link: "/blog/data-science", desc: "Understand how data science and AI are shaping the future of technology." },
-            { title: "Blockchain & Web3", img: B7, link: "/blog/blockchain-web3", desc: "Dive into the world of blockchain, cryptocurrencies, and the future of Web3." }
+            { title: "Blockchain & Web3", img: S1, link: "/blog/blockchain-web3", desc: "Dive into the world of blockchain, cryptocurrencies, and the future of Web3." }
           ].map((blog, index) => (
             <motion.div
               key={index}
