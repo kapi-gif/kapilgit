@@ -23,6 +23,7 @@ import K2 from '../Assets/K2.webp'
 import { motion } from "framer-motion";
 
 import B15 from '../Assets/B15.jpg'
+import Sudesh from '../Assets/Sudesh.png'
 
 
 
@@ -39,9 +40,9 @@ const Home = () => {
           {/* Image Section */}
           <div className="w-full md:w-1/2">
             <img
-              src={B16}
+              src={Sudesh}
               alt="Mindful Eating Blog"
-              className="w-full h-60 md:h-96 lg:h-[500px] object-cover rounded-lg mb-6 mx-auto mt-5"
+              className="w-full h-60 md:h-96 lg:h-[500px] object-scale-down rounded-2xl mb-6 mx-auto mt-5 border-2  border-gray-500"
             />
           </div>
 
