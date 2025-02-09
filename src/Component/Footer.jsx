@@ -10,7 +10,6 @@ const Footer = () => {
     <h1 className="flex -ml-32"><img className='size-6 ' src = {NutritionIcon} alt="Nutrition Icon" />Nutritionist</h1>
     </div>
 
-    {/* Centered Navigation Links */}
     <div className="w-7/12 ">
     <ul className="flex gap-1 text-sm">
       <li className="hover:bg-gray-700 px-4 py-2 rounded">Home</li>
@@ -18,7 +17,7 @@ const Footer = () => {
       <li className="hover:bg-gray-700 px-4 py-2 rounded">Features</li>
       <li className="hover:bg-gray-700 px-4 py-2 rounded">Testimonials</li>
       <li className="hover:bg-gray-700 px-4 py-2 rounded">Contact</li>
-      {/* <li className="hover:bg-gray-700 px-4 py-2 rounded">Go To Top</li> */}
+      
     </ul>
   </div >
   <div className="mr-10 text-sm "><ul><li className="hover:bg-gray-700 px-4 py-2 rounded ">Go To Top <FontAwesomeIcon icon={faArrowUp} /></li></ul></div>

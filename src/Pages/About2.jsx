@@ -9,13 +9,14 @@ import about7 from "../Assets/about7.jpg";
 import about8 from "../Assets/about8.jpg";
 import about9 from "../Assets/about9.jpg";
 import about10 from "../Assets/about10.jpg";
-import { FaStar } from 'react-icons/fa';
-import { FaGraduationCap } from 'react-icons/fa';
-import { FaMedal } from 'react-icons/fa';
+// import { FaStar } from 'react-icons/fa';
+// import { FaGraduationCap } from 'react-icons/fa';
+// import { FaMedal } from 'react-icons/fa';
 import { FaCertificate } from 'react-icons/fa';
 import NutritionIcon from "../Assets/Nutrition Icon.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
 
 
       {/* <div className="bg-zinc-950 m-4 sm:m-6 md:m-10 lg:m-[50px] h-auto p-4 sm:p-6 md:p-8 text-white flex flex-col justify-between"> */}
-      <div className="bg-gradient-to-r from-gray-900 to-zinc-600 
+      <div className="bg-gradient-to-r from-gray-900 to-zinc-950 
   m-4 sm:m-6 md:m-10 lg:m-[50px] h-auto p-4 sm:p-6 md:p-8 
   text-white flex flex-col justify-between transition-all duration-500 ">
         <div>
@@ -53,12 +54,12 @@ const About = () => {
       <h1 className="text-center font-bold text-2xl mt-16 mb-5 px-4"> 
         Our Story
       </h1>
-      <p className="px-4 md:px-40 text-justify text-sm md:text-base"> 
+      <p className="px-4 md:px-40 text-justify text-sm md:text-base text-center"> 
         Welcome to <span className="font-semibold text-blue-600">AI Integratorz</span>, your trusted partner in transforming businesses through cutting-edge IT solutions. Our team of experienced developers and IT professionals specialize in delivering innovative software, AI-driven technologies, and cloud-based systems tailored to meet the unique needs of your organization. We are committed to driving digital transformation, enhancing operational efficiency, and helping you stay ahead in this rapidly evolving tech landscape.
       </p>
 
 
-      <div className="bg-gradient-to-r from-gray-900 to-zinc-600  py-16 mt-20 m-10 ">
+      <div className="bg-gradient-to-r from-gray-900 to-zinc-950  py-16 mt-20 m-10 ">
 
         <div className="max-w-5xl mx-auto  md:px-8">
 
@@ -75,11 +76,11 @@ const About = () => {
             className="rounded-lg shadow-md w-full object-cover h-auto md:h-72" 
           />
         </div>
-        <div className="flex flex-col justify-center px-4 md:px-0"> {/* Added padding */}
-          <h2 className="text-xl font-semibold mb-4 underline underline-offset-8 decoration-lime-600 text-white ml-0 md:ml-20"> {/* Adjusted margin */}
+        <div className="flex flex-col justify-center px-4 md:px-0"> 
+          <h2 className="text-xl font-semibold mb-4 underline underline-offset-8 decoration-lime-600 text-white ml-0 md:ml-20"> 
             Inspiring Transformations Through Technology
           </h2>
-          <p className="text-white mb-4 ml-0 md:ml-20 text-sm md:text-base"> {/* Adjusted margin and text size */}
+          <p className="text-white mb-4 ml-0 md:ml-20 text-sm md:text-base"> 
             Our IT-driven platform continues to empower individuals to transform their
             lives through personalized nutrition coaching. With an expanding user base
             and a growing team of tech experts and nutritionists, we remain committed to
@@ -87,7 +88,7 @@ const About = () => {
             happier, more fulfilling lives. Our journey of inspiring transformations
             continues, one digital interaction at a time.
           </p>
-          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">January 1, 2025</p> {/* Adjusted margin and text size */}
+          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">January 1, 2025</p> 
         </div>
       </div>
 
@@ -97,20 +98,20 @@ const About = () => {
           <img
             src={about2}
             alt='about2'
-            className="rounded-lg shadow-md w-full object-cover h-auto md:h-72" // h-auto for responsiveness
+            className="rounded-lg shadow-md w-full object-cover h-auto md:h-72"
           />
         </div>
-        <div className="flex flex-col justify-center px-4 md:px-0 order-2 md:order-1"> {/* Added padding and order change */}
-          <h2 className="text-xl font-semibold mb-4 underline underline-offset-8 decoration-lime-600 text-white mr-0 md:mr-20"> {/* Adjusted margin */}
+        <div className="flex flex-col justify-center px-4 md:px-0 order-2 md:order-1"> 
+          <h2 className="text-xl font-semibold mb-4 underline underline-offset-8 decoration-lime-600 text-white mr-0 md:mr-20"> 
             Recognition for Tech-Driven Wellness
           </h2>
-          <p className="text-white mb-4 mr-0 md:mr-20 text-sm md:text-base"> {/* Adjusted margin and text size */}
+          <p className="text-white mb-4 mr-0 md:mr-20 text-sm md:text-base"> 
             Our innovative use of technology in personalized nutrition has earned us
             industry recognition. We've received accolades for our cutting-edge
             platform and its impact on client success, solidifying our position as a
             leader in tech-enabled wellness solutions.
           </p>
-          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">January 10, 2023</p> {/* Adjusted margin and text size */}
+          <p className="text-white mr-0 md:mr-20 text-sm md:text-base">January 10, 2023</p>
         </div>
       </div>
 
@@ -120,20 +121,20 @@ const About = () => {
           <img
             src={about3}
             alt="about3"
-            className="rounded-lg shadow-md w-full object-cover h-auto md:h-72" // h-auto for responsiveness
+            className="rounded-lg shadow-md w-full object-cover h-auto md:h-72" 
           />
         </div>
-        <div className="flex flex-col justify-center px-4 md:px-0"> {/* Added padding */}
+        <div className="flex flex-col justify-center px-4 md:px-0"> 
           <h2 className="text-xl font-semibold mb-4 underline underline-offset-8 decoration-lime-600 text-white ml-0 md:ml-20"> {/* Adjusted margin */}
             Continued Growth in Digital Wellness
           </h2>
-          <p className="text-white mb-4 ml-0 md:ml-20 text-sm md:text-base"> {/* Adjusted margin and text size */}
+          <p className="text-white mb-4 ml-0 md:ml-20 text-sm md:text-base"> 
             Our platform has now empowered over 5,000 users, a testament to our
             commitment to helping individuals achieve their health and wellness
             goals through technology. This milestone highlights the positive impact
             our digital solutions have made on thousands of lives.
           </p>
-          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">January 2, 2025</p> {/* Adjusted margin and text size */}
+          <p className="text-white ml-0 md:ml-20 text-sm md:text-base">January 2, 2025</p> 
         </div>
       </div>
     </div>
@@ -305,117 +306,60 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container mx-auto max-w-6xl ">
-      <h1 className="font-bold text-center text-xl mt-12 px-4">
-        Company Achievements
-      </h1>
-      <p className="px-4 md:px-24 mt-6  md:text-ms text-center">
-        At AI Integratorz, we take pride in our achievements and the innovative solutions
-        we have delivered to our clients. From cutting-edge software development to
-        advanced AI-driven applications, our journey has been marked by continuous growth
-        and technological excellence. Here are some of our notable milestones.
-      </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-white">
-        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-3">
-          <h3 className="flex items-center gap-2 text-ms">
-            <FaStar size={18} color="#4CAF50" /> 500+ Successful Projects
-          </h3>
-          <p className="text-xs mt-1">
-            Our innovative IT solutions have powered businesses worldwide, delivering scalable software,
-            AI-driven applications, and seamless digital transformations.
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-3">
-          <h3 className="flex items-center gap-2 text-ms">
-            <FaGraduationCap size={18} color="#4CAF50" /> Recognition for Innovation
-          </h3>
-          <p className="text-xs mt-1">
-            Recognized as a leading provider of IT solutions, earning accolades for our cutting-edge approach to software development.
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-3">
-          <h3 className="flex items-center gap-2 text-ms">
-            <FaMedal size={18} color="#4CAF50" /> Positive Client Feedback
-          </h3>
-          <p className="text-xs mt-1">
-            We have received numerous testimonials from satisfied clients who have experienced improved business operations through our services.
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-3">
-          <h3 className="flex items-center gap-2 text-ms">
-            <FaCertificate size={18} color="#4CAF50" /> Collaborate With Top Tech Experts
-          </h3>
-          <p className="text-xs mt-1">
-            Established partnerships with leading software engineers and IT professionals to provide the best technology solutions and services.
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-zinc-900 mt-6 p-4 text-white">
-        <h4 className="text-lg font-semibold mb-3">
-          We Are Proud of Our Achievements
-        </h4>
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <p className="md:w-9/12 text-xs md:text-sm">
-            But our ultimate satisfaction comes from helping our clients grow and excel in the digital world.
-            Join AI INTEGRATOR today and embark on your journey toward tech-driven success.
-          </p>
-          <button className="bg-white text-black hover:bg-pink-600 px-2 py-1 rounded mt-3 md:mt-0 text-ms">
-            Request a Demo
-          </button>
-        </div>
-      </div>
-    </div>
 
 
-
-    <nav className="w-full bg-zinc-950 text-white py-3 mt-20">
-      <div className="container mx-auto px-4"> {/* Added container for centering */}
-        <div className="flex flex-col md:flex-row items-center justify-between"> {/* Flex for responsiveness */}
-          <div className="flex items-center">
-            <h1 className="flex">
-              <img className="size-6" src={NutritionIcon} alt="Nutrition Icon" />
-              AI INTEGRATOR'S
-            </h1>
-          </div>
-
-          <div className="md:w-7/12 mt-4 md:mt-0"> {/* Added margin top for small screens */}
-            <ul className="flex flex-col md:flex-row gap-1 text-sm justify-center"> {/* Flex for responsiveness */}
-              <li className="hover:bg-gray-700 px-4 py-2 rounded">Home</li>
-              <li className="hover:bg-gray-700 px-4 py-2 rounded">Services</li>
-              <li className="hover:bg-gray-700 px-4 py-2 rounded">Features</li>
-              <li className="hover:bg-gray-700 px-4 py-2 rounded">Testimonials</li>
-              <li className="hover:bg-gray-700 px-4 py-2 rounded">Contact</li>
-            </ul>
-          </div>
-
-          <div className="mt-4 md:mt-0"> {/* Added margin top for small screens */}
-            <ul>
-              <li className="hover:bg-gray-700 px-4 py-2 rounded">
-                Go To Top <FontAwesomeIcon icon={faArrowUp} />
-              </li>
-            </ul>
-          </div>
-        </div>
+      <nav className="w-full bg-zinc-950 text-white py-4 md:py-3 h-auto mt-10 md:mt-10">
+          <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4">
+            <div className="flex items-center space-x-2">
+              <img className="w-8 h-8" src={NutritionIcon} alt="Nutrition Icon" />
+              <h1 className="text-lg md:text-xl font-bold">AI INTEGRATORZ</h1>
+            </div>
 
 
-        <div className="bg-pink-500 mt-6 p-2 border-white text-black rounded"> {/* Removed fixed width and margins */}
-          <div className="flex flex-col md:flex-row items-center justify-between px-2 py-1 text-sm"> {/* Flex for responsiveness */}
-            <p>hello@aiintegrators.com</p>
-            <p>+916264601696</p>
-            <p>Somewhere in the World</p>
-            <div>
-                <p>Ai Integrtor's. All rights reserved</p>
+            <div className="w-full md:w-auto mt-4 md:mt-0">
+              <ul className="flex flex-col md:flex-row justify-center md:gap-4 text-sm space-y-2 md:space-y-0">
+                <Link to="/" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Home</Link>
+                <Link to="/TeamMembers2" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Services</Link>
+                <Link to="/pricing" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Our Team </Link>
+                <Link to="/blog" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Blog</Link>
+                 <Link to="/contact" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Contact </Link>
+              </ul>
+            </div>
+
+
+            <div className="mt-4 md:mt-0">
+              <ul>
+                <li className="hover:bg-gray-700 px-4 py-2 rounded text-sm flex items-center justify-center">
+                  Go To Top <FontAwesomeIcon icon={faArrowUp} className="ml-2" />
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </nav>
 
+
+          <div className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto mt-6 p-3 bg-neutral-600 rounded-lg">
+                <div className="flex flex-col md:flex-row items-center text-sm gap-4 md:gap-10">
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Contact: +916264601696</p>
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Email: info@aiintegratorz.com</p>
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Address: Sapna Sangeeta Road</p>
+                </div>
+            </div>
+
+
+            <style jsx>{`
+                .contact-info:hover {
+                    color: transparent;
+                    background-image: linear-gradient(to right, pink ,yellow);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    @apply text-shadow-[0_0_10px_#fff,_0_0_20px_#fff,_0_0_30px_#fff]; /* Tailwind text-shadow */
+                }
+                .contact-info{
+                    @apply text-shadow-[0_0_5px_#fff,_0_0_10px_#fff];
+                }
+
+            `}</style>
+        </nav>
 
 
     </>

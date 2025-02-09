@@ -128,6 +128,9 @@ import NutritionIcon from "../Assets/Nutrition Icon.png"
 import Map from "../Assets/Map.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+
+
 
 const Contact = () => {
   return (
@@ -273,7 +276,7 @@ const Contact = () => {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(126, 185, 8, 0.2); /* Lighter blue inner glow */
+  background: rgba(179, 234, 69, 0.2); /* Lighter blue inner glow */
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -306,11 +309,11 @@ const Contact = () => {
           {/* Navigation Links */}
           <div className="w-full md:w-auto mt-4 md:mt-0">
             <ul className="flex flex-col md:flex-row justify-center md:gap-4 text-sm space-y-2 md:space-y-0">
-              <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Home</li>
-              <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Services</li>
-              <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Features</li>
-              <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Testimonials</li>
-              <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Contact</li>
+              <Link to="/" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center ">Home</Link>
+              <Link to="/TeamMembers2" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Services</Link>
+              <Link to="/about2" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">About</Link>
+              <Link to="/pricing" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Our Team </Link>
+              <Link to="/process" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Process </Link>
             </ul>
           </div>
 
@@ -324,14 +327,29 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Contact Information Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto mt-6 p-3 bg-pink-600 text-black rounded-lg">
-          <div className="flex flex-col md:flex-row items-center text-sm gap-4 md:gap-10">
-            <p>Contact: +916264601696 </p>
-            <p>Email: info@aiintegratorz.com</p>
-            <p>Address: Sapna Sangeeta Road </p>
-          </div>
-        </div>
+        <div className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto mt-6 p-3 bg-neutral-600 rounded-lg">
+                <div className="flex flex-col md:flex-row items-center text-sm gap-4 md:gap-10">
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Contact: +916264601696</p>
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Email: info@aiintegratorz.com</p>
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Address: Sapna Sangeeta Road</p>
+                </div>
+            </div>
+
+
+            <style jsx>{`
+                .contact-info:hover {
+                    color: transparent;
+                    background-image: linear-gradient(to right, pink ,yellow);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    @apply text-shadow-[0_0_10px_#fff,_0_0_20px_#fff,_0_0_30px_#fff]; /* Tailwind text-shadow */
+                }
+                .contact-info{
+                    @apply text-shadow-[0_0_5px_#fff,_0_0_10px_#fff];
+                }
+
+            `}</style>
+       
       </nav>
       </div>
 

@@ -24,6 +24,7 @@ import { motion } from "framer-motion";
 
 import B15 from '../Assets/B15.jpg'
 import Sudesh from '../Assets/Sudesh.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -48,11 +49,11 @@ const Home = () => {
 
           {/* Text Section */}
           <div className="w-full md:w-1/2 md:pl-8 lg:pl-16">
-          <div className="text-2xl gap-2 mt-4 md:mt-10 font-bold mb-4 border-b-2 border-white inline-block 
+            <div className="text-2xl gap-2 mt-4 md:mt-10 font-bold mb-4 border-b-2 border-white inline-block 
   bg-gradient-to-r from-gray-300 to-gray-500 bg-clip-text text-transparent 
   transition-all duration-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600">
-  Empowering Your Business with
-</div>
+              Empowering Your Business with
+            </div>
 
 
 
@@ -172,7 +173,7 @@ const Home = () => {
 
 
 
-        
+
 
         <div className="text-center mt-[90px] max-w-8xl mx-auto px-4 text-white">
           <h2 className="text-3xl font-bold mb-4">
@@ -221,12 +222,12 @@ const Home = () => {
         <section className="bg-gradient-to-r from-zinc-800 via-zinc-600 to-zinc-900 py-16 mt-[200px] px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-white">
           <div className="max-w-6xl mx-auto text-center">
 
-            
+
             <motion.h2
-              initial={{ x: -100, opacity: 0 }} 
-              whileInView={{ x: 0, opacity: 1 }} 
-              transition={{ duration: 0.8, ease: "easeOut" }} 
-              viewport={{ once: false, amount: 0.3 }} 
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
               className="text-4xl font-bold mb-6 bg-gradient-to-l from-blue-500 via-purple-500 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_0_6px_rgba(100,149,237,0.7)]"
             >
               Our Testimonials
@@ -271,27 +272,24 @@ const Home = () => {
         </section>
 
         <nav className="w-full bg-zinc-950 text-white py-4 md:py-3 h-auto mt-10 md:mt-10">
-          {/* Navigation Container */}
           <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4">
-
-            {/* Logo Section */}
             <div className="flex items-center space-x-2">
               <img className="w-8 h-8" src={NutritionIcon} alt="Nutrition Icon" />
               <h1 className="text-lg md:text-xl font-bold">AI INTEGRATORZ</h1>
             </div>
 
-            {/* Navigation Links */}
+
             <div className="w-full md:w-auto mt-4 md:mt-0">
               <ul className="flex flex-col md:flex-row justify-center md:gap-4 text-sm space-y-2 md:space-y-0">
-                <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Home</li>
-                <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Services</li>
-                <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Features</li>
-                <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Testimonials</li>
-                <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Contact</li>
+                <Link to="/TeamMembers2" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Services</Link>
+                <Link to="/about2" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">About Us</Link>
+                <Link to="/pricing" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Our Team </Link>
+                <Link to="/blog" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Blog</Link>
+                 <Link to="/contact" className="nav-link hover:bg-pink-600 px-2 py-2 rounded text-center">Contact </Link>
               </ul>
             </div>
 
-            {/* Go To Top Button */}
+
             <div className="mt-4 md:mt-0">
               <ul>
                 <li className="hover:bg-gray-700 px-4 py-2 rounded text-sm flex items-center justify-center">
@@ -301,14 +299,29 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Contact Information Section */}
-          <div className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto mt-6 p-3 bg-neutral-600 text-black rounded-lg">
-            <div className="flex flex-col md:flex-row items-center text-sm gap-4 md:gap-10">
-              <p>Contact: +916264601696 </p>
-              <p>Email: info@aiintegratorz.com</p>
-              <p>Address: Sapna Sangeeta Road </p>
+
+          <div className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto mt-6 p-3 bg-neutral-600 rounded-lg">
+                <div className="flex flex-col md:flex-row items-center text-sm gap-4 md:gap-10">
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Contact: +916264601696</p>
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Email: info@aiintegratorz.com</p>
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Address: Sapna Sangeeta Road</p>
+                </div>
             </div>
-          </div>
+
+
+            <style jsx>{`
+                .contact-info:hover {
+                    color: transparent;
+                    background-image: linear-gradient(to right, pink ,yellow);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    @apply text-shadow-[0_0_10px_#fff,_0_0_20px_#fff,_0_0_30px_#fff]; /* Tailwind text-shadow */
+                }
+                .contact-info{
+                    @apply text-shadow-[0_0_5px_#fff,_0_0_10px_#fff];
+                }
+
+            `}</style>
         </nav>
 
 

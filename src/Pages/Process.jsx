@@ -114,6 +114,7 @@ import ITIcon from "../Assets/Ai3.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import NutritionIcon from "../Assets/Nutrition Icon.png";
+import { Link } from 'react-router-dom';
 
 const steps = [
     { id: 1, title: "Initial Consultation", description: "We begin by scheduling a consultation to understand your business needs and challenges, either through a virtual meeting or in person. During this session, we will assess your goals and discuss how our IT solutions can best serve you.", icon: "💻" },
@@ -194,22 +195,22 @@ const Process = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4">
                     <div className="flex items-center space-x-2">
                         <img className="w-8 h-8" src={NutritionIcon} alt="Nutrition Icon" />
-                        <h1 className="text-lg md:text-xl font-bold">AI INTEGRATOR'S</h1>
+                        <h1 className="text-lg md:text-xl font-bold">AI INTEGRATORZ</h1>
                     </div>
 
                     <div className="w-full md:w-auto mt-4 md:mt-0">
                         <ul className="flex flex-col md:flex-row justify-center md:gap-4 text-sm space-y-2 md:space-y-0">
-                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Home</li>
-                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Services</li>
-                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Features</li>
-                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Testimonials</li>
-                            <li className="hover:bg-gray-700 px-4 py-2 rounded text-center">Contact</li>
+                            <Link to="/" className="nav-link hover:bg-gray-600 px-2 py-2 rounded text-center ">Home</Link>
+                            <Link to="/TeamMembers2" className="nav-link hover:bg-gray-600 px-2 py-2 rounded text-center">Services</Link>
+                            <Link to="/about2" className="nav-link hover:bg-gray-600 px-2 py-2 rounded text-center">About</Link>
+                            <Link to="/pricing" className="nav-link hover:bg-gray-600 px-2 py-2 rounded text-center">Our Team </Link>
+                            <Link to="/contact" className="nav-link hover:bg-gray-600 px-2 py-2 rounded text-center">Contact </Link>
                         </ul>
                     </div>
 
                     {/* Go To Top Button */}
                     <motion.div
-                        whileHover={{ scale: 1.1, rotate: 10 }}
+                        whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         className="mt-4 md:mt-0"
                     >
@@ -222,13 +223,28 @@ const Process = () => {
                 </div>
 
                 {/* Contact Information Section */}
-                <div className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto mt-6 p-3 bg-gray-600 text-black rounded-lg">
-                    <div className="flex flex-col md:flex-row items-center text-sm gap-4 md:gap-10">
-                        <p>Contact: +916264601696 </p>
-                        <p>Email: info@aiintegrators.com</p>
-                        <p>Address: Sapna Sangeeta Road </p>
-                    </div>
+                <div className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto mt-6 p-3 bg-neutral-600 rounded-lg">
+                <div className="flex flex-col md:flex-row items-center text-sm gap-4 md:gap-10">
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Contact: +916264601696</p>
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Email: info@aiintegratorz.com</p>
+                    <p className="contact-info text-white transition-colors duration-300 px-2 py-1 rounded">Address: Sapna Sangeeta Road</p>
                 </div>
+            </div>
+
+
+            <style jsx>{`
+                .contact-info:hover {
+                    color: transparent;
+                    background-image: linear-gradient(to right, pink ,yellow);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    @apply text-shadow-[0_0_10px_#fff,_0_0_20px_#fff,_0_0_30px_#fff]; /* Tailwind text-shadow */
+                }
+                .contact-info{
+                    @apply text-shadow-[0_0_5px_#fff,_0_0_10px_#fff];
+                }
+
+            `}</style>
             </nav>
         </>
     );
