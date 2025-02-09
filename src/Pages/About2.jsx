@@ -24,7 +24,10 @@ const About = () => {
 
 
 
-      <div className="bg-zinc-950 m-4 sm:m-6 md:m-10 lg:m-[50px] h-auto p-4 sm:p-6 md:p-8 text-white flex flex-col justify-between">
+      {/* <div className="bg-zinc-950 m-4 sm:m-6 md:m-10 lg:m-[50px] h-auto p-4 sm:p-6 md:p-8 text-white flex flex-col justify-between"> */}
+      <div className="bg-gradient-to-r from-gray-900 to-zinc-600 
+  m-4 sm:m-6 md:m-10 lg:m-[50px] h-auto p-4 sm:p-6 md:p-8 
+  text-white flex flex-col justify-between transition-all duration-500 ">
         <div>
           <img className="w-10 h-10 mx-auto mt-6 sm:mt-8 md:mt-10" src={NutritionIcon} alt="Nutrition Icon" />
           <h1 className="text-xl sm:text-2xl font-bold mb-4 flex justify-center items-center mt-4 sm:mt-5 text-center">
@@ -47,27 +50,29 @@ const About = () => {
 
 
 
-      <h1 className="text-center font-bold text-2xl mt-16 mb-5 px-4"> {/* Added mb and px */}
+      <h1 className="text-center font-bold text-2xl mt-16 mb-5 px-4"> 
         Our Story
       </h1>
-      <p className="px-4 md:px-40 text-justify text-sm md:text-base"> {/* Added responsive px and text size */}
+      <p className="px-4 md:px-40 text-justify text-sm md:text-base"> 
         Welcome to <span className="font-semibold text-blue-600">AI Integratorz</span>, your trusted partner in transforming businesses through cutting-edge IT solutions. Our team of experienced developers and IT professionals specialize in delivering innovative software, AI-driven technologies, and cloud-based systems tailored to meet the unique needs of your organization. We are committed to driving digital transformation, enhancing operational efficiency, and helping you stay ahead in this rapidly evolving tech landscape.
       </p>
 
 
-      <div className="bg-zinc-950 py-16 mt-20 m-10 ">
+      <div className="bg-gradient-to-r from-gray-900 to-zinc-600  py-16 mt-20 m-10 ">
 
         <div className="max-w-5xl mx-auto  md:px-8">
 
 
         <div>
+
+
       {/* Section 1 */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-0">
         <div className="w-full">
           <img
             src={about1}
             alt="about1"
-            className="rounded-lg shadow-md w-full object-cover h-auto md:h-72" // h-auto for responsiveness
+            className="rounded-lg shadow-md w-full object-cover h-auto md:h-72" 
           />
         </div>
         <div className="flex flex-col justify-center px-4 md:px-0"> {/* Added padding */}
@@ -300,69 +305,68 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container mx-auto">
-      <h1 className="font-bold text-center text-2xl mt-16 px-4"> 
+      <div className="container mx-auto max-w-6xl ">
+      <h1 className="font-bold text-center text-xl mt-12 px-4">
         Company Achievements
       </h1>
-      <p className="px-4 md:px-36 mt-8 text-sm md:text-base text-center"> 
-        At AI Integratorz , we take pride in our achievements and the innovative solutions
+      <p className="px-4 md:px-24 mt-6  md:text-ms text-center">
+        At AI Integratorz, we take pride in our achievements and the innovative solutions
         we have delivered to our clients. From cutting-edge software development to
         advanced AI-driven applications, our journey has been marked by continuous growth
         and technological excellence. Here are some of our notable milestones.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 text-white"> 
-        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-4"> 
-          <h3 className="flex items-center gap-3">
-            <FaStar size={25} color="#4CAF50" /> 500+ Successful Projects
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-white">
+        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-3">
+          <h3 className="flex items-center gap-2 text-ms">
+            <FaStar size={18} color="#4CAF50" /> 500+ Successful Projects
           </h3>
-          <p className="text-sm mt-2 "> 
+          <p className="text-xs mt-1">
             Our innovative IT solutions have powered businesses worldwide, delivering scalable software,
             AI-driven applications, and seamless digital transformations.
           </p>
         </div>
 
-        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-4"> 
-          <h3 className="flex items-center gap-3"> 
-            <FaGraduationCap size={25} color="#4CAF50" /> Recognition for Innovation
+        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-3">
+          <h3 className="flex items-center gap-2 text-ms">
+            <FaGraduationCap size={18} color="#4CAF50" /> Recognition for Innovation
           </h3>
-          <p className="text-sm mt-2"> {/* Added margin top */}
+          <p className="text-xs mt-1">
             Recognized as a leading provider of IT solutions, earning accolades for our cutting-edge approach to software development.
           </p>
         </div>
 
-        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-4"> 
-          <h3 className="flex items-center gap-3"> 
-            <FaMedal size={25} color="#4CAF50" /> Positive Client Feedback
+        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-3">
+          <h3 className="flex items-center gap-2 text-ms">
+            <FaMedal size={18} color="#4CAF50" /> Positive Client Feedback
           </h3>
-          <p className="text-sm mt-2"> 
+          <p className="text-xs mt-1">
             We have received numerous testimonials from satisfied clients who have experienced improved business operations through our services.
           </p>
         </div>
 
-        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-4"> 
-          <h3 className="flex items-center gap-3"> 
-            <FaCertificate size={25} color="#4CAF50" /> Collaborate With Top Tech Experts
+        <div className="bg-zinc-900 hover:scale-105 transition-transform duration-300 p-3">
+          <h3 className="flex items-center gap-2 text-ms">
+            <FaCertificate size={18} color="#4CAF50" /> Collaborate With Top Tech Experts
           </h3>
-          <p className="text-sm mt-2"> 
+          <p className="text-xs mt-1">
             Established partnerships with leading software engineers and IT professionals to provide the best technology solutions and services.
           </p>
         </div>
       </div>
 
-
-      <div className="bg-zinc-900 mt-8 p-6 text-white"> 
-        <h4 className="text-xl font-semibold mb-4"> 
+      <div className="bg-zinc-900 mt-6 p-4 text-white">
+        <h4 className="text-lg font-semibold mb-3">
           We Are Proud of Our Achievements
         </h4>
-        <div className="flex flex-col md:flex-row items-center justify-between"> 
-            <p className="md:w-9/12 text-sm md:text-base"> 
-                But our ultimate satisfaction comes from helping our clients grow and excel in the digital world.
-                Join AI INTEGRATOR today and embark on your journey toward tech-driven success.
-            </p>
-            <button className="bg-white text-black hover:bg-pink-600 px-3 py-2 rounded mt-4 md:mt-0"> 
-                Request a Demo
-            </button>
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <p className="md:w-9/12 text-xs md:text-sm">
+            But our ultimate satisfaction comes from helping our clients grow and excel in the digital world.
+            Join AI INTEGRATOR today and embark on your journey toward tech-driven success.
+          </p>
+          <button className="bg-white text-black hover:bg-pink-600 px-2 py-1 rounded mt-3 md:mt-0 text-ms">
+            Request a Demo
+          </button>
         </div>
       </div>
     </div>

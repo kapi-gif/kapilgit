@@ -135,29 +135,73 @@ const Contact = () => {
       
       <div className='bg-zinc-800 '>
       <div className="bg-zinc-950 mx-auto max-w-7xl  p-6  flex flex-col justify-center items-center text-white h-auto md:h-[360px] mt-12">
+        
         <div className="w-full text-center rounded-2xl">
-          <h1 className="text-2xl md:text-3xl font-bold mb-4">Contact Us</h1>
-          <p className="text-sm md:text-base mb-2">
-            We value your feedback, questions, and concerns at Ai Integratorz . Our dedicated team is here to
-            assist you and provide the support you need on your journey.
-          </p>
-          <p className="text-sm md:text-base">
-            Please don't hesitate to reach out to us using any of the following contact methods.
-          </p>
+    <h1 className="text-2xl md:text-3xl font-bold mb-4">Contact Us</h1>
+    <p className="text-sm md:text-base mb-2">
+        We value your feedback, questions, and concerns at Ai Integratorz. Our dedicated team is here to
+        assist you and provide the support you need on your journey.
+    </p>
+    <p className="text-sm md:text-base">
+        Please don't hesitate to reach out to us using any of the following contact methods.
+    </p>
 
-          
-          <nav className="bg-zinc-600 mt-8 flex flex-col md:flex-row justify-center items-center md:space-x-6 space-y-4 md:space-y-0 py-6 md:py-8 rounded-lg">
-            <p className="w-full md:w-[300px] bg-zinc-950 text-white py-4 md:py-6 text-center rounded-lg hover:bg-zinc-800">
-              support@aiintegratorz.com
-            </p>
-            <p className="w-full md:w-[300px] bg-zinc-950 text-white py-4 md:py-6 text-center rounded-lg hover:bg-zinc-800">
-              +916264601696
-            </p>
-            <p className="w-full md:w-[300px] bg-zinc-950 text-white py-4 md:py-6 text-center rounded-lg hover:bg-zinc-800">
-              Somewhere in the World
-            </p>
-          </nav>
-        </div>
+    <nav className="bg-zinc-600 mt-8 flex flex-col md:flex-row justify-center items-center md:space-x-6 space-y-4 md:space-y-0 py-6 md:py-8 rounded-lg">
+  <p className="w-full md:w-[300px] text-white py-4 md:py-6 text-center rounded-lg glow-on-hover"
+     style={{ background: "linear-gradient(to right, #374151, #4b5563)" }}>
+    support@aiintegratorz.com
+  </p>
+  <p className="w-full md:w-[300px] text-white py-4 md:py-6 text-center rounded-lg glow-on-hover"
+     style={{ background: "linear-gradient(to right, #374151, #4b5563)" }}>
+    +916264601696
+  </p>
+  <p className="w-full md:w-[300px] text-white py-4 md:py-6 text-center rounded-lg glow-on-hover"
+     style={{ background: "linear-gradient(to right, #374151, #4b5563)" }}>
+    Somewhere in the World
+  </p>
+</nav>
+
+<style jsx>{`
+.glow-on-hover {
+  transition: all 0.3s ease;
+  overflow: hidden; /* Prevent glow from spilling out */
+}
+
+.glow-on-hover:hover {
+  transform: scale(1.02); /* Optional: Scale up slightly on hover */
+  /* Neon Glow - Example: Blue */
+  box-shadow: 0 0 10px rgba(0, 173, 239, 0.7),
+              0 0 20px rgba(0, 173, 239, 0.5),
+              0 0 30px rgba(0, 173, 239, 0.3);
+}
+
+.glow-on-hover::before { /* Optional Inner Glow */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 173, 239, 0.2); /* Lighter blue inner glow */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.glow-on-hover:hover::before {
+  opacity: 1;
+}
+
+/* Optional: Change background on hover (if you want to keep it) */
+.glow-on-hover:hover {
+   background: linear-gradient(to right, #4b5563, #6b7280); /* Example darker gradient */
+}
+
+`}</style>
+</div>
+
+        
       </div>
 
       <div className="flex justify-center mt-16 px-4">
@@ -194,7 +238,7 @@ const Contact = () => {
 
 
 
-      <div className="max-w-7xl mx-auto bg-zinc-950 shadow-lg rounded-lg p-4 sm:p-6 md:p-8 flex flex-col mt-8 md:mt-12 text-white">
+      <div className="max-w-7xl mx-auto bg-zinc-950 shadow-lg rounded-lg p-4 sm:p-6 md:p-8 flex flex-col mt-8 md:mt-12 text-white bg-gradient-to-l from-zinc-800 to-zinc-950">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
           Ready to leverage cutting-edge technology for a smarter and healthier future with AI INTEGRATORZ ?
         </h2>
@@ -204,9 +248,47 @@ const Contact = () => {
         </p>
 
         <div className="flex justify-center md:justify-end">
-          <button className="bg-zinc-700 text-white py-2 px-4 sm:px-6 rounded-lg hover:bg-pink-600 transition duration-300">
-            Join Us Now
-          </button>
+        <button className="relative bg-zinc-500 text-black py-2 px-4 sm:px-6 rounded-lg glow-on-hover">
+  Join Us Now
+</button>
+
+<style jsx>{`
+.glow-on-hover {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.glow-on-hover:hover {
+  transform: scale(1.05);
+  /* Neon Glow - Example: Blue */
+  box-shadow: 0 0 10px rgba(0, 173, 239, 0.7), /* Outer glow */
+              0 0 20px rgba(0, 173, 239, 0.5), /* Slightly larger glow */
+              0 0 30px rgba(0, 173, 239, 0.3); /* Even larger, fainter glow */
+}
+
+.glow-on-hover::before { /* Optional Inner Glow */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(126, 185, 8, 0.2); /* Lighter blue inner glow */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.glow-on-hover:hover::before {
+  opacity: 1;
+}
+
+/* Optional: You can keep the background color change on hover if you like */
+.glow-on-hover:hover {
+  background-color:rgb(3,233,244,); /* Darker blue background on hover (optional) */
+}
+`}</style>
         </div>
       </div>
 

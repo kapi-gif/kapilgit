@@ -6,8 +6,7 @@ import B3 from "../Assets/B3.jpg";
 import B4 from "../Assets/b4.avif";
 import B5 from "../Assets/B5.jpg";
 import B6 from "../Assets/B6.jpg";
-// import B7 from "../Assets/B7.jpg";
-// import B8 from "../Assets/B8.jpg";
+
 import NutritionIcon from "../Assets/Nutrition Icon.png"
 
 function Blog() {
@@ -245,10 +244,8 @@ function Blog() {
 export default Blog;
 
 
-
 // import React from 'react';
 // import { Link } from 'react-router-dom';
-// import { motion } from 'framer-motion';
 // import B1 from "../Assets/B1.jpg";
 // import B2 from "../Assets/B2.jpg";
 // import B3 from "../Assets/B3.jpg";
@@ -256,76 +253,92 @@ export default Blog;
 // import B5 from "../Assets/B5.jpg";
 // import B6 from "../Assets/B6.jpg";
 // import NutritionIcon from "../Assets/Nutrition Icon.png";
+// import { motion } from "framer-motion"; // Import framer-motion
 
 // function Blog() {
+//   const blogVariants = {
+//     hidden: { opacity: 0, y: 20 }, // Initial animation state
+//     visible: { opacity: 1, y: 0, transition: { duration: 0.5, staggerChildren: 0.2 } }, // Final animation state
+//   };
+
+//   const itemVariants = {
+//     hidden: { opacity: 0, scale: 0.8 },
+//     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+//   };
+
 //   return (
 //     <>
 //       {/* Header Section */}
-//       <div className="bg-zinc-900 p-6 text-white text-center">
-//         <motion.img 
-//           className="w-20 h-20 mx-auto mt-10" 
-//           src={NutritionIcon} 
-//           alt="Nutrition Icon"
-//           initial={{ opacity: 0, scale: 0.8 }}
-//           animate={{ opacity: 1, scale: 1 }}
-//           transition={{ duration: 0.8 }}
-//         />
+//       <motion.div 
+//         className="bg-zinc-900 p-6 text-white text-center"
+//         initial={{ opacity: 0, y: -20 }} // Initial position off-screen
+//         animate={{ opacity: 1, y: 0 }} // Final position
+//         transition={{ duration: 0.8, ease: "easeInOut" }} // Smooth transition
+//       >
+//         <img className="w-20 h-20 mx-auto mt-10" src={NutritionIcon} alt="Nutrition Icon" />
 //         <h1 className="text-3xl font-bold mb-4 mt-8">Our Blogs</h1>
 //         <p className="text-sm md:text-base mx-auto max-w-3xl p-4">
-//           Welcome to the Blog Section of <strong>AI Integratorz</strong>, your trusted source for the latest insights, trends, and expert advice on Artificial Intelligence and technology innovations.
+//           Welcome to the Blog Section of <strong>AI Integratorz</strong>, your trusted source for the latest insights, trends, and expert advice on Artificial Intelligence and technology innovations. Explore our blog to discover in-depth articles on AI development, machine learning, data science, and cutting-edge IT solutions shaping the future.
 //         </p>
-//       </div>
+//       </motion.div>
 
 //       {/* Blog Entries Section */}
-//       <div className="bg-zinc-950 p-4 lg:p-20 text-white">
+//       <motion.div
+//         className="bg-zinc-950 p-4 lg:p-20 text-white"
+//         variants={blogVariants}
+//         initial="hidden"
+//         animate="visible"
+//       >
 //         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-//           {[B1, B2, B3, B4, B5, B6].map((image, index) => (
+
+//           {/* Blog Entries (Map over data if possible for cleaner code) */}
+//           {[B1, B2, B3, B4, B5, B6, B5, B2, B6].map((image, index) => (
 //             <motion.div
 //               key={index}
-//               className="bg-gray-800 p-6 rounded-lg cursor-pointer"
-//               whileHover={{ scale: 1.05, backgroundColor: "#27272a" }}
-//               transition={{ type: "spring", stiffness: 300 }}
+//               className="bg-gray-800 p-6 rounded-lg hover:bg-zinc-950"
+//               variants={itemVariants}
 //             >
-//               <h3 className="text-xl font-semibold mb-3 underline text-center text-lime-600">
+//               <h3 className="text-xl font-semibold mb-3 underline text-center text-lime-600 hover:text-pink-600">
+//                 {/* Dynamic Title Here - Ideally from data */}
 //                 Blog Title {index + 1}
+                
 //               </h3>
-//               <motion.img
+//               <img
 //                 src={image}
-//                 alt={`Blog Image ${index + 1}`}
-//                 className="w-full h-40 object-cover rounded-md mb-4"
-//                 whileHover={{ scale: 1.1 }}
-//                 transition={{ duration: 0.3 }}
+//                 alt={`Blog ${index + 1}`}
+//                 className="w-full h-40 object-cover rounded-md mb-4 hover:scale-105 transition-transform duration-300" // Image hover effect
 //               />
 //               <h4 className="text-lg font-bold mb-2 text-center">
-//                 Engaging Blog Heading
+//                 {/* Dynamic Subtitle Here */}
+//                 Blog Subtitle {index + 1}
 //               </h4>
 //               <p className="text-xs text-justify mb-4">
-//                 This is a captivating blog post description that keeps the reader intrigued with AI insights and tech trends.
+//                 {/* Dynamic Description Here */}
+//                 Blog Description {index + 1}
 //               </p>
-//               <Link to={`/blog/post-${index + 1}`}>
-//                 <motion.button
-//                   className="block mx-auto px-6 py-2 bg-pink-600 rounded hover:bg-lime-500"
-//                   whileHover={{ scale: 1.1 }}
-//                   transition={{ type: "spring", stiffness: 300 }}
-//                 >
+//               <Link to={`/blog/blog-${index + 1}`}> {/* Dynamic Link */}
+//                 <button className="block mx-auto px-6 py-2 bg-pink-600 rounded hover:bg-lime-500">
 //                   Read More
-//                 </motion.button>
+//                 </button>
 //               </Link>
 //             </motion.div>
 //           ))}
+
 //         </div>
-//       </div>
+//       </motion.div>
 
 //       {/* Footer Section */}
-//       <div className="bg-gray-800 p-6 text-white text-center">
-//         <p>&copy; 2025 AI Integratorz. All Rights Reserved.</p>
-//       </div>
+//       <motion.div
+//         className="bg-gray-800 p-6 text-white text-center"
+//         initial={{ opacity: 0, y: 20 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 0.8, ease: "easeInOut" }}
+//       >
+//         <p>&copy; 2025 AI Integratorz . All Rights Reserved.</p>
+//       </motion.div>
 //     </>
 //   );
 // }
 
 // export default Blog;
-
-
-
 
